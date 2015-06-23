@@ -54,7 +54,7 @@
 
 		(function(d, s, id) {
 
-			var js, fjs = d.getElementsbyTagName(s)[0];
+			var js, fjs = d.getElementsByTagName(s)[0];
 			if (d.getElementbyId(id)) return;
 			js = d.createElement(s); js.id = id;
 			js.src = "//connect.facebook.net/en_US/sdk.js";
