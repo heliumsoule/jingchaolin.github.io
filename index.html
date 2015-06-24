@@ -68,6 +68,7 @@
 				console.log('Successful login for', response.name);
 				console.log(response);
 				console.log(response.picture.data.url);
+				console.log('Testing');
 				// document.getElementById('status').innerHTML = 'Thank you for loggin in ' + response.name + '!';
 				document.getElementById('status').innerHTML = ('<img src=' + response.picture.data.url + '> ' + response.name);
 
@@ -78,7 +79,7 @@
 
 	</script>
 
-	<fb:login-button scope="public_profile,email", onlogin="checkLoginState();"></fb:login-button>
+	<fb:login-button scope="public_profile,email,user_about_me", onlogin="checkLoginState();"></fb:login-button>
 	<div id="status"></div>
 	<div id="fb-root"></div>
 	<div
