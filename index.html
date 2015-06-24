@@ -13,6 +13,8 @@
 </head>
 
 <body>
+	<script src="JS/FBLogin.js"></script>
+	<!--
 	<script>
 		function statusChangeCallback(response) {
 
@@ -20,7 +22,7 @@
 			console.log(response);
 
 			if (response.status === 'connected') {
-				window.location.href = 'swingmain.html';
+				// window.location.href = 'https://raw.githubusercontent.com/jingchaolin/jingchaolin.github.io/master/swingmain.html';
 				showPicture();
 			} else if (response.status === 'not_authorized') {
 
@@ -76,7 +78,7 @@
 
 
 	</script>
-
+-->
 	<fb:login-button scope="public_profile,email,user_photos", onlogin="checkLoginState();"></fb:login-button>
 	<div id="status"></div>
 	<div id="fb-root"></div>
