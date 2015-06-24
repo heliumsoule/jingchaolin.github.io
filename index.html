@@ -6,7 +6,7 @@
 
 	<meta charset = "utf-8">
 	<meta name="Swing Social Networking Plugin" content="FB Graph API">
-	<meta name="LM" content="SwingMain">
+	<meta name="LM" content="Login">
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -20,7 +20,7 @@
 			console.log(response);
 
 			if (response.status === 'connected') {
-
+				window.location.href = ''
 				showPicture();
 			} else if (response.status === 'not_authorized') {
 
