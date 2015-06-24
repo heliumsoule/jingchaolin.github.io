@@ -4,7 +4,7 @@ function statusChangeCallback(response) {
 	console.log(response);
 
 	if (response.status === 'connected') {
-		// window.location.href = 'https://raw.githubusercontent.com/jingchaolin/jingchaolin.github.io/master/swingmain.html';
+		window.location.href = "swingmain.html"
 		showPicture();
 	} else if (response.status === 'not_authorized') {
 
